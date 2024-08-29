@@ -58,6 +58,9 @@
 			dependencies = (
 			);
 			name = TaskMaster;
+			packageProductDependencies = (
+				DA20A38F2C81409700C93E37 /* ComposableArchitecture */,
+			);
 			productName = TaskMaster;
 			productReference = DA20A38C2C8108A200C93E37 /* TaskMaster.app */;
 			productType = "com.apple.product-type.application";
@@ -82,6 +85,7 @@
 			mainGroup = 1024CF17B3F9049CEC51D860;
 			packageReferences = (
 				E025E0F9B3260731D35335E2 /* XCLocalSwiftPackageReference "TaskMasterPackages" */,
+				DA20A38E2C81409700C93E37 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = DA20A38D2C8108A200C93E37 /* Products */;
 			projectDirPath = "";
@@ -286,6 +290,25 @@
 			relativePath = TaskMasterPackages;
 		};
 /* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA20A38E2C81409700C93E37 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA20A38F2C81409700C93E37 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA20A38E2C81409700C93E37 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19EDB47C666129CCFC6AD4D9 /* Project object */;
 }
