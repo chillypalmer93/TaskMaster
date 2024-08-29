@@ -1,0 +1,17 @@
+name: TaskMaster
+options:
+  bundleIdPrefix: com.yourcompany
+  deploymentTarget:
+    iOS: 14.0
+targets:
+  TaskMaster:
+    type: application
+    platform: iOS
+    sources: [TaskMaster]
+    settings:
+      base:
+        INFOPLIST_FILE: TaskMaster/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.yourcompany.TaskMaster
+packages:
+  TaskMasterPackages:
+    path: TaskMasterPackages
