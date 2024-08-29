@@ -11,9 +11,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E620888137BBEA07107B61F /* TaskMaster.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TaskMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE4AF86900A83A1B3A5E3DF /* TaskMasterPackages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TaskMasterPackages; sourceTree = SOURCE_ROOT; };
 		9C0C2F5FB00BE95452AA228C /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		DA20A38C2C8108A200C93E37 /* TaskMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2507EB60990E6199E72D86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -21,18 +21,10 @@
 		1024CF17B3F9049CEC51D860 = {
 			isa = PBXGroup;
 			children = (
-				C95C470B6ACCAA18A5FB9D91 /* Packages */,
+				7EE4AF86900A83A1B3A5E3DF /* TaskMasterPackages */,
 				C74E173534F6581774A08CF5 /* TaskMaster */,
-				AAA95F7731C1A41E04E1AF11 /* Products */,
+				DA20A38D2C8108A200C93E37 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		AAA95F7731C1A41E04E1AF11 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2E620888137BBEA07107B61F /* TaskMaster.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		C74E173534F6581774A08CF5 /* TaskMaster */ = {
@@ -44,12 +36,12 @@
 			path = TaskMaster;
 			sourceTree = "<group>";
 		};
-		C95C470B6ACCAA18A5FB9D91 /* Packages */ = {
+		DA20A38D2C8108A200C93E37 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7EE4AF86900A83A1B3A5E3DF /* TaskMasterPackages */,
+				DA20A38C2C8108A200C93E37 /* TaskMaster.app */,
 			);
-			name = Packages;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,7 +59,7 @@
 			);
 			name = TaskMaster;
 			productName = TaskMaster;
-			productReference = 2E620888137BBEA07107B61F /* TaskMaster.app */;
+			productReference = DA20A38C2C8108A200C93E37 /* TaskMaster.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -91,6 +83,7 @@
 			packageReferences = (
 				E025E0F9B3260731D35335E2 /* XCLocalSwiftPackageReference "TaskMasterPackages" */,
 			);
+			productRefGroup = DA20A38D2C8108A200C93E37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -179,6 +172,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6C798K33PY;
 				INFOPLIST_FILE = TaskMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -195,6 +189,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6C798K33PY;
 				INFOPLIST_FILE = TaskMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -5,7 +5,6 @@ let package = Package(
     name: "TaskMasterPackages",
     platforms: [.iOS(.v14)],
     products: [
-        .library(name: "Core", targets: ["Core"]),
         .library(name: "ProjectsFeature", targets: ["ProjectsFeature"]),
         .library(name: "ClientsFeature", targets: ["ClientsFeature"]),
     ],
@@ -14,30 +13,16 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Core",
+            name: "ProjectsFeature",
             dependencies: [
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
             ]
         ),
         .target(
-            name: "ProjectsFeature",
-            dependencies: ["Core"]
-        ),
-        .target(
             name: "ClientsFeature",
-            dependencies: ["Core"]
-        ),
-        .testTarget(
-            name: "CoreTests",
-            dependencies: ["Core"]
-        ),
-        .testTarget(
-            name: "ProjectsFeatureTests",
-            dependencies: ["ProjectsFeature"]
-        ),
-        .testTarget(
-            name: "ClientsFeatureTests",
-            dependencies: ["ClientsFeature"]
+            dependencies: [
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
+            ]
         ),
     ]
 )
